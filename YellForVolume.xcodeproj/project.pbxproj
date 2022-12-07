@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAC5B04329415965008E8BCF /* YellForVolumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B04229415965008E8BCF /* YellForVolumeApp.swift */; };
+		BAC5B04529415965008E8BCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B04429415965008E8BCF /* ContentView.swift */; };
+		BAC5B0472941596A008E8BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC5B0462941596A008E8BCF /* Assets.xcassets */; };
+		BAC5B04A2941596A008E8BCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC5B0492941596A008E8BCF /* Preview Assets.xcassets */; };
+		BAC5B0542941596B008E8BCF /* YellForVolumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B0532941596B008E8BCF /* YellForVolumeTests.swift */; };
+		BAC5B05E2941596B008E8BCF /* YellForVolumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B05D2941596B008E8BCF /* YellForVolumeUITests.swift */; };
+		BAC5B0602941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B05F2941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAC5B0502941596B008E8BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAC5B03729415965008E8BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAC5B03E29415965008E8BCF;
+			remoteInfo = YellForVolume;
+		};
+		BAC5B05A2941596B008E8BCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAC5B03729415965008E8BCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAC5B03E29415965008E8BCF;
+			remoteInfo = YellForVolume;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAC5B03F29415965008E8BCF /* YellForVolume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellForVolume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC5B04229415965008E8BCF /* YellForVolumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeApp.swift; sourceTree = "<group>"; };
+		BAC5B04429415965008E8BCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BAC5B0462941596A008E8BCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAC5B0492941596A008E8BCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BAC5B04F2941596B008E8BCF /* YellForVolumeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YellForVolumeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC5B0532941596B008E8BCF /* YellForVolumeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeTests.swift; sourceTree = "<group>"; };
+		BAC5B0592941596B008E8BCF /* YellForVolumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YellForVolumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAC5B05D2941596B008E8BCF /* YellForVolumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeUITests.swift; sourceTree = "<group>"; };
+		BAC5B05F2941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAC5B03C29415965008E8BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC5B04C2941596B008E8BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC5B0562941596B008E8BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAC5B03629415965008E8BCF = {
+			isa = PBXGroup;
+			children = (
+				BAC5B04129415965008E8BCF /* YellForVolume */,
+				BAC5B0522941596B008E8BCF /* YellForVolumeTests */,
+				BAC5B05C2941596B008E8BCF /* YellForVolumeUITests */,
+				BAC5B04029415965008E8BCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAC5B04029415965008E8BCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5B03F29415965008E8BCF /* YellForVolume.app */,
+				BAC5B04F2941596B008E8BCF /* YellForVolumeTests.xctest */,
+				BAC5B0592941596B008E8BCF /* YellForVolumeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAC5B04129415965008E8BCF /* YellForVolume */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5B04229415965008E8BCF /* YellForVolumeApp.swift */,
+				BAC5B04429415965008E8BCF /* ContentView.swift */,
+				BAC5B0462941596A008E8BCF /* Assets.xcassets */,
+				BAC5B0482941596A008E8BCF /* Preview Content */,
+			);
+			path = YellForVolume;
+			sourceTree = "<group>";
+		};
+		BAC5B0482941596A008E8BCF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5B0492941596A008E8BCF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BAC5B0522941596B008E8BCF /* YellForVolumeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5B0532941596B008E8BCF /* YellForVolumeTests.swift */,
+			);
+			path = YellForVolumeTests;
+			sourceTree = "<group>";
+		};
+		BAC5B05C2941596B008E8BCF /* YellForVolumeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5B05D2941596B008E8BCF /* YellForVolumeUITests.swift */,
+				BAC5B05F2941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift */,
+			);
+			path = YellForVolumeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAC5B03E29415965008E8BCF /* YellForVolume */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC5B0632941596B008E8BCF /* Build configuration list for PBXNativeTarget "YellForVolume" */;
+			buildPhases = (
+				BAC5B03B29415965008E8BCF /* Sources */,
+				BAC5B03C29415965008E8BCF /* Frameworks */,
+				BAC5B03D29415965008E8BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YellForVolume;
+			productName = YellForVolume;
+			productReference = BAC5B03F29415965008E8BCF /* YellForVolume.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAC5B04E2941596B008E8BCF /* YellForVolumeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC5B0662941596B008E8BCF /* Build configuration list for PBXNativeTarget "YellForVolumeTests" */;
+			buildPhases = (
+				BAC5B04B2941596B008E8BCF /* Sources */,
+				BAC5B04C2941596B008E8BCF /* Frameworks */,
+				BAC5B04D2941596B008E8BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAC5B0512941596B008E8BCF /* PBXTargetDependency */,
+			);
+			name = YellForVolumeTests;
+			productName = YellForVolumeTests;
+			productReference = BAC5B04F2941596B008E8BCF /* YellForVolumeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAC5B0582941596B008E8BCF /* YellForVolumeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAC5B0692941596B008E8BCF /* Build configuration list for PBXNativeTarget "YellForVolumeUITests" */;
+			buildPhases = (
+				BAC5B0552941596B008E8BCF /* Sources */,
+				BAC5B0562941596B008E8BCF /* Frameworks */,
+				BAC5B0572941596B008E8BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAC5B05B2941596B008E8BCF /* PBXTargetDependency */,
+			);
+			name = YellForVolumeUITests;
+			productName = YellForVolumeUITests;
+			productReference = BAC5B0592941596B008E8BCF /* YellForVolumeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAC5B03729415965008E8BCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					BAC5B03E29415965008E8BCF = {
+						CreatedOnToolsVersion = 13.4;
+					};
+					BAC5B04E2941596B008E8BCF = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = BAC5B03E29415965008E8BCF;
+					};
+					BAC5B0582941596B008E8BCF = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = BAC5B03E29415965008E8BCF;
+					};
+				};
+			};
+			buildConfigurationList = BAC5B03A29415965008E8BCF /* Build configuration list for PBXProject "YellForVolume" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAC5B03629415965008E8BCF;
+			productRefGroup = BAC5B04029415965008E8BCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAC5B03E29415965008E8BCF /* YellForVolume */,
+				BAC5B04E2941596B008E8BCF /* YellForVolumeTests */,
+				BAC5B0582941596B008E8BCF /* YellForVolumeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAC5B03D29415965008E8BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC5B04A2941596A008E8BCF /* Preview Assets.xcassets in Resources */,
+				BAC5B0472941596A008E8BCF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC5B04D2941596B008E8BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC5B0572941596B008E8BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAC5B03B29415965008E8BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC5B04529415965008E8BCF /* ContentView.swift in Sources */,
+				BAC5B04329415965008E8BCF /* YellForVolumeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC5B04B2941596B008E8BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC5B0542941596B008E8BCF /* YellForVolumeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAC5B0552941596B008E8BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAC5B0602941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift in Sources */,
+				BAC5B05E2941596B008E8BCF /* YellForVolumeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAC5B0512941596B008E8BCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAC5B03E29415965008E8BCF /* YellForVolume */;
+			targetProxy = BAC5B0502941596B008E8BCF /* PBXContainerItemProxy */;
+		};
+		BAC5B05B2941596B008E8BCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAC5B03E29415965008E8BCF /* YellForVolume */;
+			targetProxy = BAC5B05A2941596B008E8BCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BAC5B0612941596B008E8BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BAC5B0622941596B008E8BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAC5B0642941596B008E8BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YellForVolume/Preview Content\"";
+				DEVELOPMENT_TEAM = X2677N2DV7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poly.YellForVolume;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAC5B0652941596B008E8BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YellForVolume/Preview Content\"";
+				DEVELOPMENT_TEAM = X2677N2DV7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poly.YellForVolume;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BAC5B0672941596B008E8BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X2677N2DV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poly.YellForVolumeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YellForVolume.app/YellForVolume";
+			};
+			name = Debug;
+		};
+		BAC5B0682941596B008E8BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X2677N2DV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poly.YellForVolumeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YellForVolume.app/YellForVolume";
+			};
+			name = Release;
+		};
+		BAC5B06A2941596B008E8BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X2677N2DV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poly.YellForVolumeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YellForVolume;
+			};
+			name = Debug;
+		};
+		BAC5B06B2941596B008E8BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = X2677N2DV7;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.poly.YellForVolumeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YellForVolume;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAC5B03A29415965008E8BCF /* Build configuration list for PBXProject "YellForVolume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC5B0612941596B008E8BCF /* Debug */,
+				BAC5B0622941596B008E8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC5B0632941596B008E8BCF /* Build configuration list for PBXNativeTarget "YellForVolume" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC5B0642941596B008E8BCF /* Debug */,
+				BAC5B0652941596B008E8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC5B0662941596B008E8BCF /* Build configuration list for PBXNativeTarget "YellForVolumeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC5B0672941596B008E8BCF /* Debug */,
+				BAC5B0682941596B008E8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAC5B0692941596B008E8BCF /* Build configuration list for PBXNativeTarget "YellForVolumeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC5B06A2941596B008E8BCF /* Debug */,
+				BAC5B06B2941596B008E8BCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAC5B03729415965008E8BCF /* Project object */;
+}
