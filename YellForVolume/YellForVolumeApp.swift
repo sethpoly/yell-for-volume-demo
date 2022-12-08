@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct YellForVolumeApp: App {
+    @StateObject private var audioRecorder = AudioRecorder()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(audioRecorder: audioRecorder)
         }
     }
 }

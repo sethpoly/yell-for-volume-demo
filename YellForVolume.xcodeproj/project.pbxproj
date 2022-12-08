@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0C1D5A29417CB900605D49 /* VolumeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0C1D5929417CB900605D49 /* VolumeSlider.swift */; };
 		BAC5B04329415965008E8BCF /* YellForVolumeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B04229415965008E8BCF /* YellForVolumeApp.swift */; };
 		BAC5B04529415965008E8BCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B04429415965008E8BCF /* ContentView.swift */; };
 		BAC5B0472941596A008E8BCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAC5B0462941596A008E8BCF /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 		BAC5B0542941596B008E8BCF /* YellForVolumeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B0532941596B008E8BCF /* YellForVolumeTests.swift */; };
 		BAC5B05E2941596B008E8BCF /* YellForVolumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B05D2941596B008E8BCF /* YellForVolumeUITests.swift */; };
 		BAC5B0602941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B05F2941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift */; };
+		BAC5B06E29415B68008E8BCF /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B06D29415B68008E8BCF /* AudioRecorder.swift */; };
+		BAF510082942180F00A44D0A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF510072942180F00A44D0A /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA0C1D5929417CB900605D49 /* VolumeSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeSlider.swift; sourceTree = "<group>"; };
 		BAC5B03F29415965008E8BCF /* YellForVolume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellForVolume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC5B04229415965008E8BCF /* YellForVolumeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeApp.swift; sourceTree = "<group>"; };
 		BAC5B04429415965008E8BCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,8 @@
 		BAC5B0592941596B008E8BCF /* YellForVolumeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YellForVolumeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAC5B05D2941596B008E8BCF /* YellForVolumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeUITests.swift; sourceTree = "<group>"; };
 		BAC5B05F2941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BAC5B06D29415B68008E8BCF /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		BAF510072942180F00A44D0A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA0C1D5829417CAB00605D49 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				BA0C1D5929417CB900605D49 /* VolumeSlider.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		BAC5B03629415965008E8BCF = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +108,11 @@
 		BAC5B04129415965008E8BCF /* YellForVolume */ = {
 			isa = PBXGroup;
 			children = (
+				BAF51006294217FF00A44D0A /* Extension */,
+				BA0C1D5829417CAB00605D49 /* Component */,
+				BAC5B06C29415B5C008E8BCF /* Model */,
+				BAC5B06F29415C4F008E8BCF /* View */,
 				BAC5B04229415965008E8BCF /* YellForVolumeApp.swift */,
-				BAC5B04429415965008E8BCF /* ContentView.swift */,
 				BAC5B0462941596A008E8BCF /* Assets.xcassets */,
 				BAC5B0482941596A008E8BCF /* Preview Content */,
 			);
@@ -125,6 +142,30 @@
 				BAC5B05F2941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift */,
 			);
 			path = YellForVolumeUITests;
+			sourceTree = "<group>";
+		};
+		BAC5B06C29415B5C008E8BCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5B06D29415B68008E8BCF /* AudioRecorder.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BAC5B06F29415C4F008E8BCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAC5B04429415965008E8BCF /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BAF51006294217FF00A44D0A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAF510072942180F00A44D0A /* Date+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +298,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF510082942180F00A44D0A /* Date+Extension.swift in Sources */,
+				BA0C1D5A29417CB900605D49 /* VolumeSlider.swift in Sources */,
+				BAC5B06E29415B68008E8BCF /* AudioRecorder.swift in Sources */,
 				BAC5B04529415965008E8BCF /* ContentView.swift in Sources */,
 				BAC5B04329415965008E8BCF /* YellForVolumeApp.swift in Sources */,
 			);
@@ -345,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +443,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -420,6 +464,7 @@
 				DEVELOPMENT_TEAM = X2677N2DV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "I need ACCESS BRO";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +494,7 @@
 				DEVELOPMENT_TEAM = X2677N2DV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "I need ACCESS BRO";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
