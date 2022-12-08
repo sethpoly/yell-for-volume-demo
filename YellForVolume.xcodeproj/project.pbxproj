@@ -16,6 +16,7 @@
 		BAC5B05E2941596B008E8BCF /* YellForVolumeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B05D2941596B008E8BCF /* YellForVolumeUITests.swift */; };
 		BAC5B0602941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B05F2941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift */; };
 		BAC5B06E29415B68008E8BCF /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAC5B06D29415B68008E8BCF /* AudioRecorder.swift */; };
+		BAF510082942180F00A44D0A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF510072942180F00A44D0A /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BAC5B05D2941596B008E8BCF /* YellForVolumeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeUITests.swift; sourceTree = "<group>"; };
 		BAC5B05F2941596B008E8BCF /* YellForVolumeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellForVolumeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BAC5B06D29415B68008E8BCF /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
+		BAF510072942180F00A44D0A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		BAC5B04129415965008E8BCF /* YellForVolume */ = {
 			isa = PBXGroup;
 			children = (
+				BAF51006294217FF00A44D0A /* Extension */,
 				BA0C1D5829417CAB00605D49 /* Component */,
 				BAC5B06C29415B5C008E8BCF /* Model */,
 				BAC5B06F29415C4F008E8BCF /* View */,
@@ -155,6 +158,14 @@
 				BAC5B04429415965008E8BCF /* ContentView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		BAF51006294217FF00A44D0A /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BAF510072942180F00A44D0A /* Date+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF510082942180F00A44D0A /* Date+Extension.swift in Sources */,
 				BA0C1D5A29417CB900605D49 /* VolumeSlider.swift in Sources */,
 				BAC5B06E29415B68008E8BCF /* AudioRecorder.swift in Sources */,
 				BAC5B04529415965008E8BCF /* ContentView.swift in Sources */,

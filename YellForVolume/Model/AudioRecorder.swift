@@ -12,6 +12,9 @@ import AVFoundation
 
 class AudioRecorder: ObservableObject {
     
+    static let minimumPower = -50.0
+    static let maximumPower = 0.0
+    
     let objectWillChange = PassthroughSubject<AudioRecorder, Never>()
     private var audioRecorder: AVAudioRecorder? = nil
     private var timer: Timer? = nil
@@ -21,6 +24,8 @@ class AudioRecorder: ObservableObject {
             objectWillChange.send(self)
         }
     }
+    
+    @Published var averagePower = 0.0
     
     func startRecording() {
         let recordingSession = AVAudioSession.sharedInstance()
@@ -32,6 +37,9 @@ class AudioRecorder: ObservableObject {
             print("Failed to set up recording session")
         }
         
+        let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        let audioFilename = documentPath.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).m4a")
+        
         let settings = [
             AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
             AVSampleRateKey: 12000,
@@ -40,8 +48,9 @@ class AudioRecorder: ObservableObject {
         ]
         
         do {
-            audioRecorder = try AVAudioRecorder()
+            audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
             audioRecorder?.record()
+            audioRecorder?.isMeteringEnabled = true
             recording = true
             pollAveragePower()
         } catch {
@@ -56,9 +65,23 @@ class AudioRecorder: ObservableObject {
     }
     
     func pollAveragePower() {
-        timer = Timer(timeInterval: 1, repeats: true, block: { [weak self] t in
-            let power = self?.audioRecorder?.averagePower(forChannel: 1)
-            print("Power = \(power ?? -1)")
+        timer?.invalidate()
+        timer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true, block: { [weak self] t in
+            self?.audioRecorder?.updateMeters()
+            let power = self?.audioRecorder?.averagePower(forChannel: 0) ?? Float(AudioRecorder.minimumPower)
+            self?.averagePower = self?.normalizePower(power: power) ?? 50.0
+            print("Raw decibels = \(power)")
         })
+    }
+    
+    private func normalizePower(power: Float) -> Double {
+        var power = Double(power)
+        if power < AudioRecorder.minimumPower {
+            power = AudioRecorder.minimumPower
+        } else if power > AudioRecorder.maximumPower {
+            power = AudioRecorder.maximumPower
+        }
+        
+        return (Double(power) - AudioRecorder.minimumPower) / (AudioRecorder.maximumPower - AudioRecorder.minimumPower) * 100
     }
 }

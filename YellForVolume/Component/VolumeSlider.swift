@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct VolumeSlider: View {
-    @Binding var value: Double
+    var value: Double
     
     @State var lastCoordinateValue: CGFloat = 0.0
     var sliderRange: ClosedRange<Double> = 1...100
@@ -45,21 +45,6 @@ struct VolumeSlider: View {
                         .foregroundColor(thumbColor)
                         .frame(width: thumbWidth, height: thumbHeight)
                         .offset(x: sliderVal)
-                        .gesture(
-                            DragGesture(minimumDistance: 0)
-                                .onChanged { v in
-                                    if (abs(v.translation.width) < 0.1) {
-                                        self.lastCoordinateValue = sliderVal
-                                    }
-                                    if v.translation.width > 0 {
-                                        let nextCoordinateValue = min(maxValue, self.lastCoordinateValue + v.translation.width)
-                                        self.value = ((nextCoordinateValue - minValue) / scaleFactor)  + lower
-                                    } else {
-                                        let nextCoordinateValue = max(minValue, self.lastCoordinateValue + v.translation.width)
-                                        self.value = ((nextCoordinateValue - minValue) / scaleFactor) + lower
-                                    }
-                               }
-                        )
                     Spacer()
                 }
             }
